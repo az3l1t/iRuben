@@ -4,10 +4,11 @@
 Приложение для изучения языков, написанное на втором курсе (проектная деятельность) на языке JAVA + JS, Spring + Node.js и фронт на html,css,js. В работе учавствуют на бэкэндера и один фронтэндер.
 # Что сделано?
 Была добавлена система регистрации. Методы регистрации нового юзера. Также написан макет для фронтенда. Скоро добавим реакт и новый модуль "Алфавит" для изучения алфавита языка с помощью необычного метода изучения
-![image](https://github.com/az3l1t/iRuben/assets/126178814/fe5a95e2-fc71-4665-88c3-5c14e33959b0)
+![image](https://github.com/az3l1t/iRuben/assets/126178814/833b30b9-1db8-43a0-bfd6-b3b2134430ca)
 
 # Макет
-![image](https://github.com/az3l1t/iRuben/assets/126178814/f00c1e45-8141-48db-b46d-f1b4382b94c1)
-![image](https://github.com/az3l1t/iRuben/assets/126178814/f69205a7-0093-418b-b48a-9c7fce730200)
+![image](https://github.com/az3l1t/iRuben/assets/126178814/44f6d773-b48b-4426-b3c3-9a5e99f9d34b)
+![image](https://github.com/az3l1t/iRuben/assets/126178814/050660eb-906a-4644-b0dd-762a16190cbf)
+
 
 
