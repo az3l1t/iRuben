@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.history-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.history-button:hover {
+    background-color: #0097a7;
+}
+
+.history-info-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    border: 2px solid #6de2ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    overflow: auto; /* Добавление прокрутки, если текст выходит за границы */
+}
+
+.history-info-container.show {
+    animation: fadeIn 1s forwards, appear 1s forwards; /* Добавление анимации при отображении */
+}
+
+@keyframes appear {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5); /* Уменьшаем размер прямоугольника перед анимацией */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Возвращаем нормальный размер */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.history-info-container img {
+    max-width: 80%; /* Максимальная ширина изображения */
+    max-height: 80%; /* Максимальная высота изображения */
+    border-radius: 10px; /* Закругленные углы */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+
+.history-info-container h2 {
+    font-size: 24px; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.history-info-container p {
+    font-size: 18px; /* Размер текста */
+    line-height: 1.5; /* Межстрочный интервал */
+    margin-bottom: 20px; /* Отступ снизу */
+}

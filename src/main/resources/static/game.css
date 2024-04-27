@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #03a9f4;
+}
+
+#wordDisplay {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin: 0 auto 10px;
+    display: block;
+    border: 1px solid #03a9f4;
+    border-radius: 4px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #03a9f4;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #03a9f4;
+    color: #000;
+}
+
+#resultMessage {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #03a9f4;
+    color: #000;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

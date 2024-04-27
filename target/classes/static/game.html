@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div class="container">
+    <h1>Word Guessing Game</h1>
+    <div id="wordDisplay">
+        <span id="word"></span>
+    </div>
+    <input type="text" id="guessInput" placeholder="Введите перевод слова">
+    <button onclick="checkGuess()">Проверить</button>
+    <div id="resultMessage">
+        <!-- Здесь будет отображаться сообщение о результате -->
+    </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

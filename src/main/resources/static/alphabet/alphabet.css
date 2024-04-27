@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #6de2ff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.site-name {
+    color: #000;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.site-name:hover {
+    color: #6de2ff;
+}
+
+.alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* Отступ сверху для букв */
+}
+
+.letter {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #6de2ff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 15px; /* Задаем радиус скругления углов */
+}
+
+.letter:hover {
+    background-color: #6de2ff;
+    color: #000;
+    transform: scale(1.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Пример анимации для буквы Ա */
+#letter-1:hover {
+    animation: bounce 0.5s;
+}
+
+
+#letterDisplay {
+    font-size: 24px; /* Установим больший размер шрифта */
+    color: red; /* Установим красный цвет текста */
+    margin-top: 20px; /* Добавим немного отступа сверху */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
